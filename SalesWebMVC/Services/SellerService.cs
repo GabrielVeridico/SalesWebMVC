@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using SalesWebMVC.Services.Exceptions;
 
 namespace SalesWebMVC.Services
 {
@@ -22,7 +24,8 @@ namespace SalesWebMVC.Services
 
         public Seller FindById(int id)
         {
-            return _context.Seller.FirstOrDefault(obj => obj.Id == id);
+            // Same thing as an include
+            return _context.Seller.Include(obj => obj.Department).FirstOrDefault(obj => obj.Id == id);
         }
 
         public void InsertSeller(Seller seller)
@@ -40,6 +43,25 @@ namespace SalesWebMVC.Services
 
             _context.Seller.Remove(obj);
             _context.SaveChanges();
+        }
+
+        public void UpdateSeller(Seller seller)
+        {
+            if(!_context.Seller.Any(x => x.Id == seller.Id))
+            {
+                throw new NotFoundException("Seller not found.");
+            }
+
+            try
+            {
+                _context.Update(seller);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                throw new DbConcurrencyException(ex.Message);
+            }
+            
         }
 
     }
