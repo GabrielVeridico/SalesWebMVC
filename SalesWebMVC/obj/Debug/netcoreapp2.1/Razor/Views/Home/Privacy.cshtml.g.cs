@@ -19,12 +19,17 @@ using SalesWebMVC;
 #line default
 #line hidden
 #line 2 "D:\Projetos CSharp\SalesWebMVC\SalesWebMVC\Views\_ViewImports.cshtml"
+using SalesWebMVC.Models;
+
+#line default
+#line hidden
+#line 3 "D:\Projetos CSharp\SalesWebMVC\SalesWebMVC\Views\_ViewImports.cshtml"
 using SalesWebMVC.Models.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e57a9cdbfb174b0e3def22c244c908ddaaf89fa7", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a29c4ae73a2f013961e90a9f03b13f41f03366db", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0b073fba08e930cba5bd5580c81de5d9603ebfe", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

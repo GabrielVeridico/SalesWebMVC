@@ -19,12 +19,17 @@ using SalesWebMVC;
 #line default
 #line hidden
 #line 2 "D:\Projetos CSharp\SalesWebMVC\SalesWebMVC\Views\_ViewImports.cshtml"
+using SalesWebMVC.Models;
+
+#line default
+#line hidden
+#line 3 "D:\Projetos CSharp\SalesWebMVC\SalesWebMVC\Views\_ViewImports.cshtml"
 using SalesWebMVC.Models.ViewModels;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9e4c57f43c055c9e31be2502a294c143aa14c310", @"/Views/Departments/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a29c4ae73a2f013961e90a9f03b13f41f03366db", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0b073fba08e930cba5bd5580c81de5d9603ebfe", @"/Views/_ViewImports.cshtml")]
     public class Views_Departments_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<SalesWebMVC.Models.Department>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -86,7 +91,7 @@ using SalesWebMVC.Models.ViewModels;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(375, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e4c57f43c055c9e31be2502a294c143aa14c3105101", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e4c57f43c055c9e31be2502a294c143aa14c3105239", async() => {
                 BeginContext(421, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -121,7 +126,7 @@ using SalesWebMVC.Models.ViewModels;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(437, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e4c57f43c055c9e31be2502a294c143aa14c3107415", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e4c57f43c055c9e31be2502a294c143aa14c3107553", async() => {
                 BeginContext(459, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
